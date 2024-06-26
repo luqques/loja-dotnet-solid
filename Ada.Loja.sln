@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ada.Loja", "Ada.Loja\Ada.Loja.csproj", "{5124AAD2-BFF8-45A2-ACDB-D263F32E6632}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ada.Loja.Tests", "Ada.Loja.Tests\Ada.Loja.Tests.csproj", "{A1297706-F4AA-4D39-9105-B114783B9CBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5124AAD2-BFF8-45A2-ACDB-D263F32E6632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5124AAD2-BFF8-45A2-ACDB-D263F32E6632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5124AAD2-BFF8-45A2-ACDB-D263F32E6632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5124AAD2-BFF8-45A2-ACDB-D263F32E6632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1297706-F4AA-4D39-9105-B114783B9CBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1297706-F4AA-4D39-9105-B114783B9CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1297706-F4AA-4D39-9105-B114783B9CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1297706-F4AA-4D39-9105-B114783B9CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02F07D16-F0AA-4697-9D02-0FD6D0F5C0C1}
+	EndGlobalSection
+EndGlobal
