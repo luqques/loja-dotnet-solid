@@ -18,11 +18,23 @@ namespace Ada.Loja
             Itens.Add(item);
         }
 
-        public decimal CalculaValorSubTotal()
+        public decimal CalcularValorSubTotal()
         {
             decimal total = 0;
             foreach (Item item in Itens)
                 total += item.Valor;
+
+            return total;
+        }
+
+        public decimal CalcularValorTaxas()
+        {
+            decimal total = 0;
+            
+            foreach (var item in Itens)
+            {
+                total += item.ObterValorTotalComTaxas();
+            }
 
             return total;
         }

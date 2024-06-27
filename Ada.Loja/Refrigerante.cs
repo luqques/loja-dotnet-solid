@@ -1,13 +1,14 @@
-﻿
+﻿using Ada.Loja.Enums;
+
 namespace Ada.Loja.Tests
 {
     public class Refrigerante : Item
     {
-        public Refrigerante(string descricao, decimal valor) : base(descricao, valor)
+        public Refrigerante(string descricao, decimal valor) : base(ECategoriaItem.Refrigerante, descricao, valor)
         {
         }
 
-        public decimal ObterTaxa(DateTime data)
+        public override decimal ObterTaxa()
         {
             return 0.2M;
         }

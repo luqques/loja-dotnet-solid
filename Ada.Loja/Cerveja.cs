@@ -1,12 +1,14 @@
-﻿namespace Ada.Loja
+﻿using Ada.Loja.Enums;
+
+namespace Ada.Loja
 {
     public class Cerveja : Item
     {
-        public Cerveja(string descricao, decimal valor) : base(descricao, valor)
+        public Cerveja(string descricao, decimal valor) : base(ECategoriaItem.Cerveja, descricao, valor)
         {
         }
 
-        public decimal ObterTaxa(DateTime data)
+        public override decimal ObterTaxa()
         {
             return 0.1M;
         }
