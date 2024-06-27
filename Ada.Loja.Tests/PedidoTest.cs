@@ -7,8 +7,7 @@ namespace Ada.Loja.Tests
         [Fact]
         public void Pedido_Deve_Retornar_ValorSubtotal_Corretamente()
         {
-            var itens = new List<Item>();
-            var pedido = new Pedido(itens);
+            var pedido = new Pedido();
 
             pedido.AdicionarItem(new Cerveja("Heineken", 15));
             pedido.AdicionarItem(new Refrigerante("Pepsi", 20));

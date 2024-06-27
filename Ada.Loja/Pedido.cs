@@ -4,13 +4,14 @@ namespace Ada.Loja
 {
     public class Pedido
     {
-        public decimal ValorTotal { get; set; }
-        public List<Item> Itens { get; set; }
-
-        public Pedido(List<Item> itens)
+        public Pedido()
         {
-            Itens = itens;
+            Id = Guid.NewGuid();
+            Itens = new List<Item>();
         }
+
+        public Guid Id { get; set; }
+        public List<Item> Itens { get; set; }
 
         public void AdicionarItem(Item item)
         {
@@ -19,10 +20,11 @@ namespace Ada.Loja
 
         public decimal CalculaValorSubTotal()
         {
+            decimal total = 0;
             foreach (Item item in Itens)
-                ValorTotal += item.Valor;
+                total += item.Valor;
 
-            return ValorTotal;
+            return total;
         }
     }
 }
