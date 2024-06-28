@@ -7,10 +7,5 @@ namespace Ada.Loja.Tests
         public Agua(string descricao, decimal valor) : base(ECategoriaItem.Agua, descricao, valor)
         {
         }
-
-        public override decimal ObterTaxa()
-        {
-            return 0.0M;
-        }
     }
 }

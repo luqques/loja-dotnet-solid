@@ -1,5 +1,3 @@
-global using Xunit;
-
 namespace Ada.Loja.Tests
 {
     public class PedidoTest

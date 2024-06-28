@@ -33,7 +33,12 @@ namespace Ada.Loja
             
             foreach (var item in Itens)
             {
-                total += item.ObterValorTotalComTaxas();
+                var itemComTaxa = item as ItemComTaxa;
+
+                if (itemComTaxa != null)
+                {
+                    total += itemComTaxa.ObterValorTotalComTaxas();
+                }
             }
 
             return total;

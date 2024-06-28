@@ -14,12 +14,5 @@ namespace Ada.Loja
         public ECategoriaItem Categoria { get; set; }
         public decimal Valor { get; set; }
         public string Descricao { get; set; }
-
-        public abstract decimal ObterTaxa();
-
-        public decimal ObterValorTotalComTaxas()
-        {
-            return Valor * ObterTaxa();
-        }
     }
 }

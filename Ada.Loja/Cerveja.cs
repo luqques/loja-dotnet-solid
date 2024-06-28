@@ -2,7 +2,7 @@
 
 namespace Ada.Loja
 {
-    public class Cerveja : Item
+    public class Cerveja : ItemComTaxa
     {
         public Cerveja(string descricao, decimal valor) : base(ECategoriaItem.Cerveja, descricao, valor)
         {
